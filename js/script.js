@@ -1,11 +1,37 @@
 $(document).ready(function () {
 
-    $("#habbit #dota img").hover(function () {
-        $("#habbit #dota img").fadeTo("medium", 0.8);
-    }, function () {
-        $("#habbit #dota img").fadeTo("medium", 1.0);
+    $("#menu").hover (function() {
+        $(this).fadeTo("medium", 1.0);
+    }, function() {
+        $(this).fadeTo("medium", 0.0);
     });
 
+    
+    $("#habbit img").hover(function () {
+        $(this).siblings().animate({
+            opacity: "1",
+            bottom: "0px",
+        });
+    }, function () {
+        $(this).siblings().animate({
+            opacity: "0",
+            bottom: "20px",
+        })
+    });
+
+    $("#role img").hover(function () {
+        $(this).siblings().animate({
+            opacity: "1",
+            bottom: "0px",
+        });
+    }, function () {
+        $(this).siblings().animate({
+            opacity: "0",
+            bottom: "20px",
+        })
+    });
+
+    /*
     $("#habbit #badminton img").hover(function () {
         $("#habbit #badminton img").fadeTo("medium", 0.8);
     }, function () {
@@ -17,6 +43,7 @@ $(document).ready(function () {
     }, function () {
         $("#habbit #brainstorm img").fadeTo("medium", 1.0);
     });
+    */
     
     $("#portrait #text").hide();
     $("#portrait #img").addClass("col-sm-offset-3").click(function () {
