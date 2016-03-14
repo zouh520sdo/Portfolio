@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Support of foreign character-->
+    <meta charset="utf-8" />
+
+    <!-- If Compatibility setting. It ensures IE users the latest rendering engine-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Get physical width of the mobile device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Name of the website displayed on the broswer tab-->
+    <title>Portfolio of Huang Zou</title>
+
+    <!-- Link custon stylesheet to the main layout page -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Link the lastest modified bootstrap style sheet -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Lastest JQuery framework, necessary for using bootstrap's JS plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <!-- link the lastest midifed bootstrap JS library -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <!-- Link to my js script -->
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-top" id="menu">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                            data-target="#my-collapsed-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Back to top</a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right" id="my-collapsed-navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#portrait">Who I am</a></li>
+                        <li><a href="#habbit">What I like</a></li>
+                        <li><a href="#role">Who I'd like to be</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<!-- 
+        <div class="row" id="menu">
+            <div class="col-xs-2 col-xs-offset-6">
+                <a href="#portrait">Who I am</a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#habbit">What I like</a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#role">Who I'd like to be</a>
+            </div>
+        </div>
+    
+    -->   
+        <div class="row odd" id="logo">
+            <h1> Huang Zou </h1>
+        </div>
+        
+        <div class="row even" id="portrait">
+            <h1 class="header col-xs-12"> Who am I?</h1>
+            <div class="col-sm-6 slidable" id="img">
+                <img class="img-responsive img-thumbnail" src="image/portrait.jpg" alt="Portrait" />
+                <p> Click Image to See More Features ...</p>
+            </div>
+            <div class="col-sm-6" id="text">
+                <img class="img-responsive" src="image/portrait.png" alt="Who Am I" />
+            </div>
+        </div> 
+
+        
+        <div class="row odd" id="habbit">
+            <h1 class="header col-xs-12"> What I like</h1>
+            <div class="col-sm-4" id="dota">
+                <h3 class="hh">Video Game</h3>
+                <img class="img-responsive img-circle" src="image/dota.jpg" alt="Video Game" />
+            </div>
+            <div class="col-sm-4" id="badminton">
+                <h3 class="hh">Badminton</h3>
+                <img class="img-responsive img-circle" src="image/badminton.jpg" alt="Badminton" />
+            </div>
+            <div class="col-sm-4" id="brainstorm">
+                <h3 class="hh">Brainstorm</h3>
+                <img class="img-responsive img-circle" src="image/brainstorm.jpg" alt="Brainstorm" />
+            </div>
+        </div>
+
+        <div class="row even" id="role">
+            <h1 class="header col-xs-12"> I'd like to be</h1>
+            <div class="col-sm-5 col-sm-offset-1">
+                <h3> Good Husband & Father</h3>
+                <img class="img-responsive img-rounded" src="image/family.png" alt="Good Game Developer" />
+            </div>
+            <div class="col-sm-5">
+                <h3>Good Game Developer</h3>
+                <img class="img-responsive img-rounded" src="image/game_developer.png" alt="Good Husband & Father" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
