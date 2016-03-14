@@ -1,11 +1,10 @@
+var menuHeight;
+
 $(document).ready(function () {
-
-    $("#menu").hover (function() {
-        $(this).fadeTo("medium", 1.0);
-    }, function() {
-        $(this).fadeTo("medium", 0.0);
-    });
-
+    
+    menuWidth = $("#logo").width();
+    menuHeight = $("#menu").height();
+    $("#menu").css("width", menuWidth).css("top", -menuHeight);
     
     $("#habbit img").hover(function () {
         $(this).siblings().animate({
@@ -57,4 +56,19 @@ $(document).ready(function () {
             });
         }
     });
+});
+
+$(window).mousemove(function(e) {
+    
+    if (e.clientY < menuHeight) {
+        $("#menu").css("top", 0);
+    }
+    else {
+        $("#menu").css("top", -menuHeight);
+    }
+});
+
+$(window).resize(function() {
+    menuWidth = $("#logo").width();
+    $("#menu").css("width", menuWidth);
 });
